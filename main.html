@@ -100,6 +100,86 @@
     <div class="d-none d-lg-block d-print-block">Hide up to large on screen, but always show on print</div>
 
 
+
+    <p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+<p class="user-select-auto">This paragraph has default select behavior.</p>
+<p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
+
+<hr>
+
+<p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
+<p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behavior).</p>
+<p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this link</a> has a <code>pe-auto</code> class and can be clicked.</p>
+
+<hr>
+
+<div class="position-relative">
+    <div class="position-absolute top-0 start-0">d</div>
+    <div class="position-absolute top-0 start-50 translate-middle-x">d</div>
+    <div class="position-absolute top-0 end-0">d</div>
+    <div class="position-absolute top-50 start-0 translate-middle-y">d</div>
+    <div class="position-absolute top-50 start-50 translate-middle">d</div>
+    <div class="position-absolute top-50 end-0 translate-middle-y">d</div>
+    <div class="position-absolute bottom-0 start-0">d</div>
+    <div class="position-absolute bottom-0 start-50 translate-middle-x">d</div>
+    <div class="position-absolute bottom-0 end-0">d</div>
+  </div>
+<hr>
+
+<p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="2h-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+
+<hr>
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+    </div>
+  </div>
+
+<hr>
+<div class="container">
+    <div class="row">
+      <div class="col align-self-start">
+        One of three columns
+      </div>
+      <div class="col align-self-center">
+        One of three columns
+      </div>
+      <div class="col align-self-end">
+        One of three columns
+      </div>
+    </div>
+  </div>
+
+
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+      <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+  
+      <!-- Force next columns to break to new line at md breakpoint and up -->
+      <div class="w-100 d-none d-md-block d-lg-none">zaman</div>
+  
+      <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+      <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
     <script src="./bootstraps/bootstrap.bundle.min.js"></script>
 </body>
 
